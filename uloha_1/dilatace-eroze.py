@@ -43,7 +43,7 @@ def print_table(matrix, title):
     for row in matrix:
         print("| " + " | ".join(map(str, row)) + " |")
 
-print_table(image2d, "Původní obraz")
+print_table(image2d, "Původní tabulka")
 
 dilated = dilatace(image2d)
 print_table(dilated, "Po dilataci")
