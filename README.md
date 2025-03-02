@@ -51,7 +51,6 @@ for row in image2d:
 Každý prvek matice se nahradí maximální hodnotou z původních sousedních hodnot (vlevo, vpravo, nad a pod).
 ```python
 def dilatace(image2d):
-    """ Provádí morfologickou dilataci na dvourozměrném poli. """
     rows, cols = len(image2d), len(image2d[0])
     output = [[0] * cols for _ in range(rows)]
 
