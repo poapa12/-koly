@@ -2,7 +2,6 @@ image2d = [[4 - max(abs(i - 4), abs(j - 4)) for j in range(9)] for i in range(9)
 
 
 def dilatace(image2d):
-    """ Provádí morfologickou dilataci na dvourozměrném poli. """
     rows, cols = len(image2d), len(image2d[0])
     output = [[0] * cols for _ in range(rows)]
 
